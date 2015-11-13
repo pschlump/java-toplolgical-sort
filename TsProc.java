@@ -47,7 +47,7 @@ public class TsProc {
 					}
 					boolean found = false;
 
-					if ( ! lib.equals(dep) ) {		// Disregard dependiecies on self
+					if ( ! lib.equals(dep) ) {		// Disregard dependencies on self
 						ArrayList<String> successors = this.graph.get(dep);
 						if ( successors == null ) {
 							found = false;
@@ -126,7 +126,7 @@ public class TsProc {
 		this.order = L;
 	}
 
-	// Output resulting toplogical sort
+	// Output resulting topological sort
 	public void outputSortedResults() {
 		System.out.println("");
 		System.out.println("**** outputSortedResults ****");
@@ -139,7 +139,7 @@ public class TsProc {
 		}
 	}
 
-	// Dump input -have to chagne debug flag before it will print-
+	// Dump input -have to change debug flag before it will print-
 	public void dumpGraphAndInDegree() {
 		if ( this.db2 ) {
 			System.out.println("");
